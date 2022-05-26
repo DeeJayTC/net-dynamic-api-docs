@@ -2,9 +2,10 @@
 
 * [😎 Welcome!](README.md)
 * [🧙 Lets get started](lets-get-started.md)
-* [🛢 Database Options](database-options.md)
+* [1⃣ Configuration & Setup](configuration-and-setup.md)
+* [2⃣ Database Options](database-options.md)
 * [AppSettings](appsettings.md)
-* [Samples](samples.md)
+* [Samples](minimal-api-example.md)
 * [Basics](basics.md)
 
 ## Reference

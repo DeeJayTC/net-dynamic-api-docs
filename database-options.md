@@ -2,7 +2,7 @@
 description: See which Databases you can use and the configuration options needed
 ---
 
-# 🛢 Database Options
+# 2⃣ Database Options
 
 Per default the library is using EF Core In Memory provider as per 0.0.6. \
 To use SQL or SQL Lite you need to configure by just changing app settings
