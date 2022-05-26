@@ -3,7 +3,6 @@ description: Build your first API in 5 minutes :)
 cover: >-
   https://user-images.githubusercontent.com/4077759/162592498-d420906e-5eee-4d95-b0b2-c5c3c2b0c8d1.png
 coverY: 79.04278462654098
-layout: landing
 ---
 
 # 😎 Welcome!
