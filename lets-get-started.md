@@ -27,19 +27,3 @@ Before being able to do anything you need to include and configure the library
 
 #### Add the library:
 
-```
- builder.Services.AddApiGeneratorServices(builder.Configuration, Assembly.GetExecutingAssembly());
-```
-
-Note: Assembly needs to point to the assembly which has your classes. In our example we just use the currently executed assembly.&#x20;
-
-Additionally we need to actually use the service and include in middleware etc:
-
-```
- app.UseApiGenerator(); 
- app.UseAutomaticAPIMigrations(true); 
-```
-
-UseAutomaticAPIMigrations should only be used during development and for test scenarios. Never have that active in production as it can possibly break things.&#x20;
-
-Want to get more detailed.... continue  reading :)
