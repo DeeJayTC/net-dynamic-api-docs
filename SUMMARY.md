@@ -12,6 +12,7 @@
 
 * [🔧 Configuration Options](reference/documentation/configuration-options.md)
 * [🤏 API Behaviour](reference/api-behaviour.md)
+* [🗃 Customizing Database](reference/customizing-database.md)
 * [❗ Additional functionality](reference/documentation/additional-functionality.md)
 * [⭐ Hooks & Events](reference/documentation/hooks.md)
 * [🔓 Authentication](reference/authentication.md)
