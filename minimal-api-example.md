@@ -2,7 +2,7 @@
 description: This is as simple as it can get
 ---
 
-# Samples
+# ⁉ Samples
 
 This code snippet is a fully working API that comes with GET,PUT,DELETE,POST endpoints, database tables etc all configured fully automatically.&#x20;
 
@@ -120,4 +120,7 @@ This code snippet is a fully working API that comes with GET,PUT,DELETE,POST end
 {% endtab %}
 {% endtabs %}
 
-There is however a lot more you can do and customize...continue  reading  the docs! :)
+{% hint style="info" %}
+You can find a lot more samples here -> [https://github.com/DeeJayTC/api-generator-samples](https://github.com/DeeJayTC/api-generator-samples)
+{% endhint %}
+

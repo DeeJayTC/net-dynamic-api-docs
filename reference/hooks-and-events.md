@@ -1,8 +1,8 @@
 ---
-description: Custom before / after hooks
+description: Custom before / after hooks make even more advanced APIs possible
 ---
 
-# Hooks
+# ⭐ Hooks & Events
 
 
 

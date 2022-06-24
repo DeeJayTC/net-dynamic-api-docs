@@ -1,4 +1,8 @@
-# Additional functionality
+---
+description: Easy to use helper classes for your APIs
+---
+
+# ❗ Additional functionality
 
 The library comes with a few useful helper classes and interfaces you can use to further reduce boilerplate code.&#x20;
 
