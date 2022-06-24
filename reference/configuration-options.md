@@ -1,3 +1,0 @@
-# 🔧 Configuration Options
-
-#### &#x20;

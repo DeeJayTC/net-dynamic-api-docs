@@ -118,6 +118,38 @@ This code snippet is a fully working API that comes with GET,PUT,DELETE,POST end
 ]
 ```
 {% endtab %}
+
+{% tab title="Setup Code" %}
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddApiGeneratorServices()
+                //.AddAssemblyWithOData(Assembly.GetExecutingAssembly())
+                .AddAssemblyWithODataFromUri("https://xxx","")
+                //.AddAssembly(Assembly.GetExecutingAssembly())
+                .AddDataContextSQL()
+                .AddOData()
+                .AddSwagger(true);
+                
+var app = builder.Build();                
+app.UseApiGenerator();
+app.UseAutomaticApiMigrations(true);
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+
+app.UseApiGeneratorAuthentication();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.UseApiGeneratorEndpoints();
+    endpoints.MapControllers();
+});
+
+app.Run();
+```
+{% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}

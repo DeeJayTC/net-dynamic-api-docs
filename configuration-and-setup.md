@@ -12,9 +12,7 @@ builder.Services.AddApiGeneratorServices()
                 .AddConfig()
 ```
 
-For a full info about all the available configuration options see here -> [configuration-options.md](../reference/configuration-options.md "mention")\
-
-
+For a full info about all the available configuration options see here -> [configuration-options.md](reference/documentation/configuration-options.md "mention")\
 
 
 Make sure to also add these to tell the .NET Core middleware to properly use the API Generator:

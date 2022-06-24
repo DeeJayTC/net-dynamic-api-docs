@@ -2,17 +2,16 @@
 
 * [😎 Welcome!](README.md)
 * [🧙 Lets get started](lets-get-started.md)
-* [1⃣ Configuration & Setup](configuration-and-setup/README.md)
-  * [Configuration Options](reference/configuration-options.md)
+* [1⃣ Configuration & Setup](configuration-and-setup.md)
+  * [Configuration Options](reference/documentation/configuration-options.md)
 * [2⃣ Database Options](database-options.md)
-* [3⃣ Basics](basics.md)
-* [4⃣ Create your first API](create-your-first-api.md)
+* [3⃣ Create your first API](appsettings.md)
 * [⁉ Samples](minimal-api-example.md)
 
 ## Reference
 
-* [🔧 Configuration Options](reference/configuration-options.md)
+* [🔧 Configuration Options](reference/documentation/configuration-options.md)
 * [🤏 API Behaviour](reference/api-behaviour.md)
-* [❗ Additional functionality](reference/additional-functionality.md)
-* [⭐ Hooks & Events](reference/hooks-and-events.md)
+* [❗ Additional functionality](reference/documentation/additional-functionality.md)
+* [⭐ Hooks & Events](reference/documentation/hooks.md)
 * [🔓 Authentication](reference/authentication.md)
