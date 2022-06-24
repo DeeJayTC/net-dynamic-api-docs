@@ -1,31 +1,39 @@
----
-description: Unfinished yet...
----
+# Configuration Options
 
-# 🔧 Configuration Options
+### The "APIAttribute"
 
-This section is unfinished, see here for all available options -> [https://github.com/DeeJayTC/net-dynamic-api/blob/main/src/TCDev.APIGenerator.Schema/ApiGeneratorConfig.cs](https://github.com/DeeJayTC/net-dynamic-api/blob/main/src/TCDev.APIGenerator.Schema/ApiGeneratorConfig.cs)
-
-```json
- //Sample Config for API Generator
-  "Api": {
-    "Swagger": {
-      "Enabled": "false", // Enable/Disable for production builds
-      "Description": "Smoower API Sample",
-      "Version": "v1",
-      "Title": "Smoower sample config",
-      "ContactMail": "Me@me.de",
-      "ContactUri": "https://www.myuri.com"
-    },
-    "Database": {
-      "DatabaseType": "SQL",
-      "Connection": "Server=localhost;database=123123123;user=<user>;password=<password>"
-    },
-    "Odata": {
-      "Enabled": true,
-      "EnableSelect": true,
-      "EnableFilter": false,
-      "EnableSort": false
-    }
-  }
 ```
+[Api("/url")]
+```
+
+Here's the currently implemented parameters, note that the library shows more but currently only these two have a proper effect as of 0.0.4
+
+```
+<param name="route">The full base route for the class ie /myclass/ </param>
+<param name="methods">The methods to generate for this endpoint</param>
+```
+
+#### "Route" just defines the base route for the class ie /people
+
+#### "Methods" defines which methods to generate, this is an enum flag ie you can combine options or just choose all.&#x20;
+
+Example for only get and post:
+
+```
+   [Api("/people", ApiMethodsToGenerate.Get | ApiMethodsToGenerate.Update )]
+```
+
+#### Coming soon, not yet implemented:
+
+```
+  /// <param name="requiredReadClaims"></param>
+  /// <param name="requiredWriteClaims"></param>
+  /// <param name="requiredRolesRead"></param>
+  /// <param name="requiredRolesWrite"></param>
+  /// <param name="fireEvents"></param>
+  /// <param name="authorize"></param>
+  /// <param name="cache"></param>
+  /// <param name="cacheDuration"></param>
+```
+
+#### &#x20;

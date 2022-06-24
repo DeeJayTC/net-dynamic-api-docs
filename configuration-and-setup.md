@@ -5,25 +5,9 @@ To get started and use the API Generator you have to initialize it first and add
 
 ```csharp
 builder.Services.AddApiGeneratorServices()
-                .AddConfig(NameOfRootNodeInAppSettings)
-                or
-                .AddConfig(new ApiGeneratorConfig() { ... })
-                or
-                .AddConfig()
+                .AddConfiguration(NameOfRootNodeInAppSettings)
+                .AddAssembly(Assembly.GetExecutingAssembly())
 ```
 
-For a full info about all the available configuration options see here -> [configuration-options.md](reference/documentation/configuration-options.md "mention")\
-
-
-Make sure to also add these to tell the .NET Core middleware to properly use the API Generator:
-
-```csharp
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-
-app.UseApiGenerator();
-app.UseAutomaticApiMigrations(true);
-```
-
+Depending on the libraries you installed and the functions you'd love to use there's further things you have to configure:\
 \

@@ -4,25 +4,40 @@ description: See which Databases you can use and the configuration options neede
 
 # 2⃣ Database Options
 
-Per default the library is using EF Core In Memory provider as per 0.0.6. \
-To use SQL or SQL Lite you need to configure by just changing app settings
+Currently the API Generator works with all Databases supported by EntityFramework itself. \
+We have ready made libraries supporting MSSQL, SQLite and Postgres but the generator should work fine with MySQL and more with a litle bit of extra work.&#x20;
+
+To use our implementation just add the package you want
 
 ```
- "Api": {
+dotnet add package TCDev.APIGenerator.Data.SQL 
+dotnet add package TCDev.APIGenerator.Data.Postgres
+dotnet add package TCDev.APIGenerator.Data.SQLite
+```
+
+Then you can add the Database to your startup file:
+
+```
+.AddDataContextSQL()
+or
+.AddDataContextSQLite
+etc..
+```
+
+To tell the generator a few further things such as connection string just set the config option in appsettings:
+
+```json
     "Database": {
-      "DatabaseType": "SQL or InMemory"
-    },
-  }
+      "DatabaseType": "SQL",
+      "Connection": "Server=localhost;database=123123123;user=sa;password=Password!23;"
+    }
 ```
 
-Connection string is taken from AppSettings "connection strings" area
+If you want to use automatic migrations add this to your startup:
 
 ```
-  "ConnectionStrings": {
-    "ApiGeneratorDatabase": "Server=localhost;database=tcdev_dev_222;user=sa;password=Password!23;"
-  },
+app.UseAutomaticApiMigrations(true);
+while true or false defines wether destructive migrations
+are allowed that could lead to data loss!
 ```
 
-{% hint style="info" %}
-NOTE: ConnectinString MUST be named "APIGeneratorDatabase" this requirement will change in a later version
-{% endhint %}

@@ -30,14 +30,7 @@ TCDev.APIGenerator.Data.InMemory\
 Further available packages for additional features:\
 \
 TCDev.APIGenerator.OData _// If you want to use any OData features_\
-
+TCDev.APIGenerator.Swagger _// Swagger OpenAPI Generator + Swagger UI_\
+TCDev.APIGenerator.Data.Redis _// Redis Cache_
 {% endhint %}
 
-{% hint style="info" %}
-Another option is to just use the packages for the Database you want to use directly, it will auto-install the needed dependencies, you can start like this:\
-\
-dotnet add package TCDev.APIGenerator.Data.SQL
-
-dotnet add package TCDev.APIGenerator.OData\
-
-{% endhint %}

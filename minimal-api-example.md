@@ -2,7 +2,7 @@
 description: This is as simple as it can get
 ---
 
-# ⁉ Samples
+# Samples
 
 This code snippet is a fully working API that comes with GET,PUT,DELETE,POST endpoints, database tables etc all configured fully automatically.&#x20;
 
@@ -118,41 +118,6 @@ This code snippet is a fully working API that comes with GET,PUT,DELETE,POST end
 ]
 ```
 {% endtab %}
-
-{% tab title="Setup Code" %}
-```csharp
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddApiGeneratorServices()
-                //.AddAssemblyWithOData(Assembly.GetExecutingAssembly())
-                .AddAssemblyWithODataFromUri("https://xxx","")
-                //.AddAssembly(Assembly.GetExecutingAssembly())
-                .AddDataContextSQL()
-                .AddOData()
-                .AddSwagger(true);
-                
-var app = builder.Build();                
-app.UseApiGenerator();
-app.UseAutomaticApiMigrations(true);
-
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
-
-app.UseApiGeneratorAuthentication();
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.UseApiGeneratorEndpoints();
-    endpoints.MapControllers();
-});
-
-app.Run();
-```
-{% endtab %}
 {% endtabs %}
 
-{% hint style="info" %}
-You can find a lot more samples here -> [https://github.com/DeeJayTC/api-generator-samples](https://github.com/DeeJayTC/api-generator-samples)
-{% endhint %}
-
+There is however a lot more you can do and customize...continue  reading  the docs! :)
