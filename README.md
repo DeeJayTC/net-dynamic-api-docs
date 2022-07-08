@@ -9,7 +9,7 @@ coverY: 79.04278462654098
 
 The API Generator automatically generates a fully working CRUD Microservice from just your Model (C# Classes) or a JSON Definition. Everything from routes, database handling, migrations, openapi spec, OData etc is working magically out of the box! You just write your model and get a fully working CRUD api with filtering, sorting, selectable fields and everything else OData and classic REST offers.\
 \
-By using the API Gen, this little snipet is already a full API
+By using the API Gen, this little snippet is already a full API
 
 ```csharp
  [Api("/people", ApiMethodsToGenerate.All )]
